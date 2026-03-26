@@ -60,11 +60,12 @@ export default function Navbar() {
         position: "fixed", top: 0, left: 0, right: 0, zIndex: 200,
         height: "var(--nav-h)",
         background: scrolled
-          ? "rgba(8,8,10,0.92)"
-          : "transparent",
-        backdropFilter: scrolled ? "blur(24px) saturate(200%)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(24px) saturate(200%)" : "none",
-        borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
+          ? "rgba(8,8,10,0.97)"
+          : "rgba(8,8,10,0.85)",
+        backdropFilter: scrolled ? "blur(24px) saturate(200%)" : "blur(8px)",
+        WebkitBackdropFilter: scrolled ? "blur(24px) saturate(200%)" : "blur(8px)",
+        borderBottom: scrolled ? "1px solid rgba(0,230,118,0.18)" : "1px solid transparent",
+        boxShadow: scrolled ? "0 0 40px rgba(0,230,118,0.05), 0 1px 0 rgba(0,230,118,0.1)" : "none",
         transition: "background 0.35s, border-color 0.35s",
       }}>
         <div style={{
@@ -75,11 +76,11 @@ export default function Navbar() {
           {/* ── LOGO ── */}
           <Link to="/" style={{ display: "flex", alignItems: "center", gap: "0.55rem", textDecoration: "none", flexShrink: 0, marginRight: "0.5rem" }}>
             <img
-              src="/logo.svg"
+              src="/Logo.png"
               alt=""
               width="34"
-              height="30"
-              style={{ display: "block", flexShrink: 0 }}
+              height="34"
+              style={{ display: "block", flexShrink: 0, objectFit: "contain" }}
             />
             <span style={{
               fontFamily: "var(--font-body)",
@@ -321,7 +322,7 @@ export default function Navbar() {
               flexShrink: 0,
             }}>
               <Link to="/" onClick={() => setMobileOpen(false)} style={{ display: "flex", alignItems: "center", gap: "0.55rem", textDecoration: "none" }}>
-                <img src="/logo.svg" alt="" width="30" height="26" style={{ display: "block" }} />
+                <img src="/Logo.png" alt="" width="30" height="30" style={{ display: "block", objectFit: "contain" }} />
                 <span style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", fontWeight: 600, letterSpacing: "-0.02em", color: "var(--tx)" }}>
                   Meta<span style={{ color: "var(--green)" }}>Ledger</span><span style={{ fontFamily: "var(--font-display)", fontStyle: "italic", fontWeight: 400, color: "var(--flame)" }}>Labs</span>
                 </span>

@@ -45,7 +45,7 @@ const ROADMAP = [
   { q: "Q3 2025", title: "Foundation",      items: ["Core protocol architecture", "Smart contract audit", "Testnet deployment", "SDK alpha release"],                  done: true  },
   { q: "Q4 2025", title: "Builder Phase",   items: ["Economy Engine beta", "Wallet SDK v1", "10 studio design partners", "Security audit complete"],                   done: true  },
   { q: "Q1 2026", title: "Mainnet Launch",  items: ["MetaLedger Chain mainnet", "Bridge infrastructure live", "First game integrations", "Public SDK launch"],          done: false, active: true },
-  { q: "Q2 2026", title: "Ecosystem Scale", items: ["Marketplace APIs", "50+ studio target", "MLL token launch", "DAO governance framework"],                           done: false },
+  { q: "Q4 2026", title: "Ecosystem Scale", items: ["Marketplace APIs", "50+ studio target", "MLL token deployment", "DAO governance framework"],                           done: false },
 ];
 
 const PILLARS = [
@@ -98,11 +98,12 @@ export default function Home() {
 
             <h1 style={{
               fontFamily: "var(--font-display)",
-              fontSize: "clamp(3.6rem, 7.5vw, 7.5rem)",
-              fontWeight: 400, lineHeight: 0.92, letterSpacing: "-0.02em",
+              fontSize: "clamp(4rem, 8vw, 9rem)",
+              fontWeight: 400, lineHeight: 0.9, letterSpacing: "0.04em",
               color: "#fff", marginBottom: "2rem",
+              textShadow: "0 0 80px rgba(0,230,118,0.12)",
             }}>
-              Own your<br />game's<br /><em style={{ fontStyle: "italic", color: "var(--green)" }}>economy</em>
+              Own your<br />game's<br /><em style={{ fontStyle: "normal", color: "var(--green)", textShadow: "0 0 40px rgba(0,230,118,0.5)" }}>economy</em>
             </h1>
 
             <p style={{
@@ -258,7 +259,7 @@ export default function Home() {
               <style>{`@media(max-width:768px){.split-grid{grid-template-columns:1fr!important}}`}</style>
               <div>
                 <div className="t-eyebrow" style={{ marginBottom: "1rem" }}>MetaLedger Chain</div>
-                <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 3.5vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, color: "var(--tx)", marginBottom: "1.25rem", letterSpacing: "-0.01em" }}>
+                <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 3.5vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, color: "var(--tx)", marginBottom: "1.25rem", letterSpacing: "0.04em" }}>
                   A blockchain built<br />for <em style={{ fontStyle: "italic", color: "var(--green)" }}>games first</em>
                 </h2>
                 <p className="t-body" style={{ marginBottom: "1.5rem", maxWidth: 460 }}>
@@ -301,7 +302,7 @@ export default function Home() {
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center" }} className="split-grid">
               <div style={{ order: 2 }}>
                 <div className="t-eyebrow" style={{ marginBottom: "1rem" }}>Wallet SDK</div>
-                <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 3.5vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, color: "var(--tx)", marginBottom: "1.25rem", letterSpacing: "-0.01em" }}>
+                <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 3.5vw, 3.2rem)", fontWeight: 400, lineHeight: 1.08, color: "var(--tx)", marginBottom: "1.25rem", letterSpacing: "0.04em" }}>
                   Onboard players,<br /><em style={{ fontStyle: "italic", color: "var(--orange)" }}>not crypto users</em>
                 </h2>
                 <p className="t-body" style={{ marginBottom: "1.5rem", maxWidth: 460 }}>
