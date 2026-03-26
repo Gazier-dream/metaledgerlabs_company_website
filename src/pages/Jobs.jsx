@@ -81,7 +81,7 @@ export default function Jobs() {
             const dc = DEPT_COLORS[job.dept] || DEPT_COLORS.Engineering;
             return (
               <motion.div key={job.id} variants={fv} custom={i} initial="hidden" whileInView="visible" viewport={{once:true}}
-                onClick={() => navigate("/apply", { state: job })}
+                onClick={() => navigate("/contact", { state: job })}
                 style={{ background:"var(--bg2)", border:"1px solid var(--border)", borderRadius:10, padding:"1.5rem 1.75rem",
                   cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"space-between",
                   gap:"1.5rem", transition:"border-color .2s, box-shadow .2s" }}

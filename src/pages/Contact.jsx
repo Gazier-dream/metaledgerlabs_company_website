@@ -8,7 +8,10 @@ import { Mail, MapPin, Linkedin, Github, ArrowUpRight, Clock } from "lucide-reac
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
-const RECAPTCHA_SITE_KEY="6LdUIXcsAAAAABpu2T1Uv-_a2CurGrbwgZXabzus";
+const RECAPTCHA_SITE_KEY="6LcPnZgsAAAAAI5fQn3yEHbJfv12hTqzZ3q2_0Hn";
+const RECAPTCHA_SITE_KEY1="6LcPnZgsAAAAAGKT47YyCfeKSaDBlx6hcdta4etN";
+
+
 const LBL=({children})=><label className="field-label">{children}</label>;
 
 export default function Contact(){

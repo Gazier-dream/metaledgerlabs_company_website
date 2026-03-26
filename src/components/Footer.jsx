@@ -35,7 +35,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link to="/" style={{ display: "flex", alignItems: "center", gap: "0.5rem", textDecoration: "none", marginBottom: "1rem" }}>
-              <img src="/Logo.png" alt="MetaLedgerLabs" style={{ width: 34, height: 30, objectFit: "contain", flexShrink: 0 }} />
+              <img src="/logo.png" alt="MetaLedgerLabs" style={{ width: 34, height: 30, objectFit: "contain", flexShrink: 0 }} />
               <span style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", fontWeight: 600, color: "var(--tx)", letterSpacing: "-0.01em" }}>
                 Meta<span style={{ color: "var(--green)" }}>Ledger</span>
                 <span style={{ color: "var(--flame)", fontStyle: "italic", fontFamily: "var(--font-display)", fontWeight: 400 }}>Labs</span>

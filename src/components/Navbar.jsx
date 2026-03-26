@@ -76,10 +76,10 @@ export default function Navbar() {
           {/* ── LOGO ── */}
           <Link to="/" style={{ display: "flex", alignItems: "center", gap: "0.55rem", textDecoration: "none", flexShrink: 0, marginRight: "0.5rem" }}>
             <img
-              src="/Logo.png"
+              src="/logo.png"
               alt=""
-              width="34"
-              height="34"
+              width="44"
+              height="44"
               style={{ display: "block", flexShrink: 0, objectFit: "contain" }}
             />
             <span style={{
@@ -322,7 +322,7 @@ export default function Navbar() {
               flexShrink: 0,
             }}>
               <Link to="/" onClick={() => setMobileOpen(false)} style={{ display: "flex", alignItems: "center", gap: "0.55rem", textDecoration: "none" }}>
-                <img src="/Logo.png" alt="" width="30" height="30" style={{ display: "block", objectFit: "contain" }} />
+                <img src="/logo.png" alt="" width="30" height="30" style={{ display: "block", objectFit: "contain" }} />
                 <span style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", fontWeight: 600, letterSpacing: "-0.02em", color: "var(--tx)" }}>
                   Meta<span style={{ color: "var(--green)" }}>Ledger</span><span style={{ fontFamily: "var(--font-display)", fontStyle: "italic", fontWeight: 400, color: "var(--flame)" }}>Labs</span>
                 </span>
